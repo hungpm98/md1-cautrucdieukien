@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<form>
+  <img id="myImage" src="https://cdnmedia.baotintuc.vn/Upload/lQuX6s340fSBU8AUyrDPxg/files/2021/10/facebook(1).jpg"  style="width: 200px" />
+  <p>Click button below to move the image to right</p>
+  <input type="button"  value="Click Me" onclick="moveRight();" />
+</form>
+<script>
+  let myPic = null;
+   myPic = document.getElementById('myImage');
+  function taoanh() {
+    myPic = document.getElementById('myImage');
+    myPic.style.position = 'relative';
+    myPic.style.left = '0px';
+  }
+  function moveRight() {
+    myPic.style.left = parseInt(myPic.style.left) + 20 +'px';
+
+  }
+        window.onload = taoanh;
+
+
+</script>
+
+</body>
+</html>

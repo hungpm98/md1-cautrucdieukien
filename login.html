@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+Tai khoan
+<label><input type="text" id="1"></label><br><br>
+Mat khau
+<input type="password" id="2"><br><br>
+<button onclick="dangnhap('')">Login</button>
+<script>
+  function dangnhap(){
+    let tk = document.getElementById('1').value ;
+    let mk = document.getElementById('2').value ;
+ if (tk == "admin") {
+   alert('thieu mat khau');
+ }else if(mk == 123){
+   alert('dang nhap thanh cong');
+ }else {
+   alert('thong tin dang nhap sai');
+ }
+  }
+
+
+
+</script>
+
+
+</body>
+</html>
